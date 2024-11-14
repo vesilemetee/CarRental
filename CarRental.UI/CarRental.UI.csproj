@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86216497-2582-493F-A10A-C8E1CBEE0383}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarRental.UI</RootNamespace>
+    <AssemblyName>CarRental.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\CarRental\FrmCarRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CarRental\FrmCarRental.Designer.cs">
+      <DependentUpon>FrmCarRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCarInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCarInsert.Designer.cs">
+      <DependentUpon>FrmCarInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCars.Designer.cs">
+      <DependentUpon>FrmCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCar_Up_Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Car\FrmCar_Up_Del.Designer.cs">
+      <DependentUpon>FrmCar_Up_Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustomers.Designer.cs">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustormerInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustormerInsert.Designer.cs">
+      <DependentUpon>FrmCustormerInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustormer_Up_Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\FrmCustormer_Up_Del.Designer.cs">
+      <DependentUpon>FrmCustormer_Up_Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUserLogin.Designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rentals\FrmRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rentals\FrmRentals.Designer.cs">
+      <DependentUpon>FrmRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CarRental\FrmCarRental.resx">
+      <DependentUpon>FrmCarRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Car\FrmCarInsert.resx">
+      <DependentUpon>FrmCarInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Car\FrmCars.resx">
+      <DependentUpon>FrmCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Car\FrmCar_Up_Del.resx">
+      <DependentUpon>FrmCar_Up_Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\FrmCustormerInsert.resx">
+      <DependentUpon>FrmCustormerInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\FrmCustormer_Up_Del.resx">
+      <DependentUpon>FrmCustormer_Up_Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rentals\FrmRentals.resx">
+      <DependentUpon>FrmRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarRental.BusinessLayer\CarRental.BusinessLayer.csproj">
+      <Project>{afef99e8-1aab-4ae4-adb8-d2fbf0ced4a5}</Project>
+      <Name>CarRental.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRental.DataLayer\CarRental.DataLayer.csproj">
+      <Project>{bf1d6bce-2715-4ea9-9746-83a9948da675}</Project>
+      <Name>CarRental.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRental.TypeLayer\CarRental.TypeLayer.csproj">
+      <Project>{2083cc66-4ee5-4fd8-96c7-580f0d11db85}</Project>
+      <Name>CarRental.TypeLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Img\VolvoXC40Beyaz.png" />
+    <None Include="Img\RenaultMasterBeyaz.jpg" />
+    <None Include="Img\renaultClioGri.jpg" />
+    <None Include="Img\FiatDobloMavi.png" />
+    <None Include="Img\FiatEgeaLacivert.jpg" />
+    <None Include="Img\FordTourneoBeyaz.png" />
+    <Content Include="Img\hyundaii20beyaz1.png" />
+    <Content Include="Img\hyundaii20Mavi.png" />
+    <Content Include="Img\hyundaii20sarı.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
